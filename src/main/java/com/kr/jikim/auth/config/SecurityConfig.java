@@ -88,7 +88,7 @@ public class SecurityConfig {
 			)
 			.authorizeHttpRequests((authorize) ->
 				authorize
-					.anyRequest().authenticated()
+					.anyRequest().authenticated()         //이게 있어야 loginform 이 활성화됨.
 			)
 			// Redirect to the login page when not authenticated from the
 			// authorization endpoint
